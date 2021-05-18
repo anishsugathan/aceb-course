@@ -1,0 +1,20 @@
+title: aceb
+description: >-
+  The course on “Applied Causality and Experiments for Business” is designed to
+  develop an appreciation of experimental and quasi-experimental techniques used
+  to infer causal relationships with data in the field of business and
+  economics.
+template:
+  repo: aceb-template
+  name: aceb
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
